@@ -10,7 +10,6 @@ export const Footer = ({
   number?: number
 }) => {
   const addTime = (item: Omit<time, 'id'>) => window.electron.ipcRenderer.send('add-time', item)
-  const list = async () => await window.electron.ipcRenderer.invoke('get-timelist', 'timelist')
   const program = async () =>
     await window.electron.ipcRenderer.send('program-shutdown', {
       number,

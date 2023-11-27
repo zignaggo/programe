@@ -1,17 +1,13 @@
-import { FC, useState, useEffect } from 'react'
+import { FC, useState, } from 'react'
 import { IDropdownOption } from '../src/components/Dropdown'
 import InputWSelect from '../src/components/InputWSelect'
-import { time } from '../../store'
-import { Time } from './components/Time'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
-import { ADD_TIME, GET_TIMELIST } from '../../store/constants'
 export const App: FC = () => {
   const [selectedItem, setSelectedItem] = useState<IDropdownOption>({
     label: 'Horas',
     labelValue: 'hour'
   })
-  const [timelist, setTimelist] = useState<time[]>([])
   const [number, setNumber] = useState<number | undefined>()
   // const list = async () => await window.electron.ipcRenderer.invoke(GET_TIMELIST, 'timelist')
   // const handleReceiveData = (item: any) => {
