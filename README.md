@@ -1,4 +1,4 @@
-# programe1
+# PrograMe
 
 An Electron application with React and TypeScript
 
