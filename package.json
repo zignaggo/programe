@@ -9,6 +9,7 @@
 		"type": "git",
 		"url": "https://github.com/zignaggo/programe"
 	},
+  "version": "1.0.0",
   "main": "./out/main/index.js",
   "scripts": {
     "format": "prettier --write .",
